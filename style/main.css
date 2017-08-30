@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif; }
+
+.links {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  display: flex; }
+  .links label {
+    padding: 10px 0;
+    flex-grow: 1;
+    cursor: pointer;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+    text-align: center;
+    font-size: 100%;
+    color: #D7E2EF; }
+    .links label:hover {
+      background-color: rgba(255, 255, 255, 0.2); }
+
+.bloco {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  display: flex; }
+  .bloco .photo img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    margin: 30px;
+    box-shadow: 3px 3px 25px #000000;
+    display: block; }
+  .bloco .info {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    display: block; }
+    .bloco .info h1 {
+      font-size: 2em;
+      color: #ADD8E6;
+      line-height: 65px; }
+    .bloco .info p {
+      font-size: 1em;
+      color: #ADD8E6;
+      line-height: 25px; }
+  .bloco .block-info {
+    width: 30vw;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    display: flex; }
+    .bloco .block-info .info-ico {
+      width: 100%;
+      max-width: 40px;
+      display: inline-block; }
+      .bloco .block-info .info-ico img {
+        width: 100%;
+        max-width: 25px;
+        display: block;
+        padding: 6px; }
+    .bloco .block-info .info-contact {
+      width: 100%;
+      max-width: 330px;
+      display: inline-block; }
+      .bloco .block-info .info-contact p {
+        font-size: 1.2em;
+        color: #ADD8E6;
+        line-height: 2em;
+        text-align: left; }
+  .bloco .btn-port {
+    width: 25vw;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    display: flex; }
+
+#home {
+  background-color: #6A5ACD; }
+
+#contact {
+  background-color: #778899; }
+
+.scroll {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+  .scroll input {
+    display: none; }
+
+.sections {
+  transition: all .8s; }
+
+#rd_contact:checked ~ .sections {
+  margin-top: -100vh; }
+
+a.btn {
+  display: inline-block;
+  margin: 0.4em;
+  padding: 0.5em;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-size: 1.25rem;
+  text-decoration: none;
+  outline: none;
+  color: #D7E2EF;
+  border-radius: 3px;
+  background-color: #483D8B;
+  -webkit-box-shadow: 0 0 0 -2px #6A5ACD, 0 0 0 -1px #483D8B;
+  box-shadow: 0 0 0 -2px #6A5ACD, 0 0 0 -1px #483D8B;
+  border: none;
+  -webkit-transition: -webkit-box-shadow .3s;
+  transition: box-shadow .3s; }
+  a.btn:hover, a.btn:focus {
+    box-shadow: 0 0 0 2px #6A5ACD, 0 0 0 4px #14145b;
+    -webkit-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    -moz-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    -o-transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    -webkit-animation: gelatine 0.5s 1;
+    -moz-animation: gelatine 0.5s 1;
+    -o-animation: gelatine 0.5s 1;
+    animation: gelatine 0.5s 1; }
+
+@keyframes gelatine {
+  from,to {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); }
+  25% {
+    -webkit-transform: scale(0.9, 1.2);
+    transform: scale(1.2, 0.9); }
+  50% {
+    -webkit-transform: scale(1.2, 0.9);
+    transform: scale(1.2, 0.9); }
+  75% {
+    -webkit-transform: scale(0.95, 1.05);
+    transform: scale(0.95, 1.2); } }
+
+/*# sourceMappingURL=main.css.map */
