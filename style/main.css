@@ -1,3 +1,4 @@
+/*Dev: Caique Sousa*/
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 * {
   margin: 0;
@@ -35,35 +36,31 @@ body {
   align-items: center;
   display: flex; }
   .bloco .photo img {
-    width: 100%;
     max-width: 200px;
     border-radius: 50%;
-    margin: 30px;
     box-shadow: 3px 3px 25px #000000;
-    display: block; }
+    display: inline-block; }
   .bloco .info {
-    width: 100%;
-    max-width: 280px;
+    max-width: 260px;
     height: auto;
-    display: block; }
+    display: inline-block;
+    text-align: left; }
     .bloco .info h1 {
       font-size: 2em;
       color: #ADD8E6;
       line-height: 65px; }
     .bloco .info p {
-      font-size: 1em;
+      font-size: .92em;
       color: #ADD8E6;
       line-height: 25px; }
   .bloco .block-info {
-    width: 30vw;
-    height: 20vh;
+    width: 442px;
     justify-content: center;
     align-items: center;
     display: flex; }
     .bloco .block-info .info-ico {
       width: 100%;
-      max-width: 40px;
-      display: inline-block; }
+      max-width: 40px; }
       .bloco .block-info .info-ico img {
         width: 100%;
         max-width: 25px;
@@ -74,13 +71,12 @@ body {
       max-width: 330px;
       display: inline-block; }
       .bloco .block-info .info-contact p {
-        font-size: 1.2em;
+        font-size: 1.1em;
         color: #ADD8E6;
         line-height: 2em;
         text-align: left; }
   .bloco .btn-port {
-    width: 25vw;
-    height: 20vh;
+    width: 422px;
     justify-content: center;
     align-items: center;
     display: flex; }
@@ -105,9 +101,39 @@ body {
 #rd_contact:checked ~ .sections {
   margin-top: -100vh; }
 
+@media (max-width: 1300px) {
+  .info {
+    margin-left: 50px; } }
+@media (max-width: 1022px) {
+  .block-info {
+    margin-top: 185px; }
+
+  .btn-port {
+    margin-bottom: 185px; } }
+@media (max-width: 940px) {
+  .info {
+    margin-left: 90px; } }
+@media (max-width: 768px) {
+  .photo img {
+    margin-top: 50px; }
+
+  .info {
+    margin-bottom: 80px;
+    margin-left: 30px; } }
+@media (max-width: 638px) {
+  .info-ico {
+    display: none; }
+
+  .info-contact {
+    margin-left: 10px; } }
+@media (max-width: 376px) {
+  .info {
+    margin-bottom: 80px;
+    margin-left: 15px;
+    font-size: .84em; } }
 a.btn {
   display: inline-block;
-  margin: 0.4em;
+  margin: 0.3em;
   padding: 0.5em;
   font-family: "Roboto", sans-serif;
   font-size: 20px;

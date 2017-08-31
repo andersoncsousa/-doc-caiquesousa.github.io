@@ -1,4 +1,4 @@
-//Dev: Caique Sousa
+/*Dev: Caique Sousa*/
 @charset "utf-8";
 
 //imports
@@ -31,6 +31,7 @@
     -o-transition-duration: $duration;
     transition-duration: $duration;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -74,42 +75,38 @@ body{
     display: flex;
 
     .photo img{
-        width: 100%;
         max-width: 200px;
         border-radius: 50%;
-        margin:30px;
         box-shadow: 3px 3px 25px #000000;
-        display: block;
+        display: inline-block;
     }
 
     .info {
-        width: 100%;
-        max-width: 280px;
+        max-width: 260px;
         height: auto;
-        display: block;
+        display: inline-block;
+        text-align: left;
         h1{
             font-size: 2em;
             color:$text-home;
             line-height: 65px;
         }
         p{
-            font-size: 1em;
+            font-size: .92em;
             color:$text-home;
             line-height: 25px;
         }
     }
 
     .block-info{
-        width:30vw;
-        height: 20vh;
+        width:442px;
         justify-content: center;
         align-items: center;
         display: flex;
+
         .info-ico{
             width: 100%;
             max-width: 40px;
-            display: inline-block;
-            
             img{
                 width: 100%;
                 max-width: 25px;
@@ -124,7 +121,7 @@ body{
             display: inline-block;
 
             p{
-                font-size: 1.2em;
+                font-size: 1.1em;
                 color:$text-home;
                 line-height: 2em;
                 text-align: left;
@@ -133,8 +130,7 @@ body{
     }
     
     .btn-port{
-        width:25vw;
-        height: 20vh;
+        width:422px;
         justify-content: center;
         align-items: center;
         display: flex;
@@ -166,6 +162,57 @@ body{
 
 #rd_contact:checked ~ .sections{
     margin-top: -100vh;
+}
+
+//media queries
+@media(max-width:1300px){
+    .info{
+        margin-left:50px;
+
+    }
+}
+
+@media(max-width:1022px){
+    .block-info{
+        margin-top: 185px;
+    }
+    .btn-port{
+        margin-bottom: 185px;
+    }
+
+}
+
+@media(max-width:940px){
+    .info{
+        margin-left:90px;
+
+    }
+}
+@media (max-width:768px){
+    .photo img{
+        margin-top:50px;
+    }
+    .info{
+        margin-bottom: 80px;
+        margin-left:30px;
+    }
+}
+
+@media (max-width:638px){
+    .info-ico{
+        display: none;
+    }
+    .info-contact{
+        margin-left: 10px;
+    }
+}
+
+@media (max-width:376px){
+    .info {
+        margin-bottom: 80px;
+        margin-left: 15px;
+        font-size:.84em;
+    }
 }
 
 //Button
@@ -210,5 +257,4 @@ a.btn{
         -webkit-transform: scale(.95,1.05);
         transform: scale(.95,1.2) 
     }
-    
 }
