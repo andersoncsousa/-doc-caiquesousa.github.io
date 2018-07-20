@@ -104,33 +104,36 @@ body {
 @media (max-width: 1300px) {
   .info {
     margin-left: 50px; } }
+
 @media (max-width: 1022px) {
   .block-info {
     margin-top: 185px; }
-
   .btn-port {
     margin-bottom: 185px; } }
+
 @media (max-width: 940px) {
   .info {
     margin-left: 90px; } }
+
 @media (max-width: 768px) {
   .photo img {
     margin-top: 50px; }
-
   .info {
     margin-bottom: 80px;
     margin-left: 30px; } }
+
 @media (max-width: 638px) {
   .info-ico {
     display: none; }
-
   .info-contact {
     margin-left: 10px; } }
+
 @media (max-width: 376px) {
   .info {
     margin-bottom: 80px;
     margin-left: 15px;
     font-size: .84em; } }
+
 a.btn {
   display: inline-block;
   margin: 0.3em;
@@ -160,7 +163,7 @@ a.btn {
     animation: gelatine 0.5s 1; }
 
 @keyframes gelatine {
-  from,to {
+  from, to {
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1); }
   25% {
@@ -172,5 +175,3 @@ a.btn {
   75% {
     -webkit-transform: scale(0.95, 1.05);
     transform: scale(0.95, 1.2); } }
-
-/*# sourceMappingURL=main.css.map */
